@@ -12,7 +12,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     locatorSprite.sayText("going nowhere fast", 5000, true)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    message = "x = " + Math.round(locatorSprite.x) + ", y = " + Math.round(locatorSprite.y)
+    message = "hey- x = " + Math.round(locatorSprite.x) + ", y = " + Math.round(locatorSprite.y)
     if (locatorSprite.y < scene.screenHeight() / 2) {
         game.showLongText(message, DialogLayout.Bottom)
     } else {
